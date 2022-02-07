@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :first__api, FirstApi.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "rut",
+  password: "qwerasdz",
   hostname: "localhost",
   database: "first__api_dev",
   show_sensitive_data_on_connection_error: true,
