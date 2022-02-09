@@ -18,8 +18,12 @@ defmodule FirstApiWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    resources "/weather", PageController
+
+    resources "/weather", PageController do
+      post "playa", PageController, :click
+    end
   end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", FirstApiWeb do
