@@ -18,10 +18,8 @@ defmodule FirstApiWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+      get "/weather", PageController, :show
 
-    resources "/weather", PageController do
-      post "playa", PageController, :click
-    end
   end
 
 

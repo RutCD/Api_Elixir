@@ -10,7 +10,7 @@ defmodule FirstApiWeb.PageController do
   end
 
   def request(url) do
-    HTTPoison.get url
+    HTTPotion.get url
 
   end
 
@@ -20,16 +20,16 @@ defmodule FirstApiWeb.PageController do
   end
 
 
+  def message(map) do
+    "> #{map["name"]} tiene la visibilidad de #{map["visibility"]}"
 
-
-  def show(conn, _params) do
-    playa = %{name: "city"}
-    render(conn, "playa.html", playa: playa)
   end
 
 
-
-
+  def show(conn, map) do
+    message = "#{map["name"]} tiene la visibilidad de #{map["visibility"]}"
+    render(conn, "weather.html", message: message)
+  end
 
 
 
