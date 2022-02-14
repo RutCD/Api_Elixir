@@ -49,7 +49,9 @@ defmodule FirstApi.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-
+      {:httpotion, "~> 3.1.0"},
+      {:poison, "~> 5.0"},
+      {:httpoison, "~> 1.8.0"}
     ]
   end
 

@@ -88,7 +88,7 @@ defmodule FirstApiWeb do
     quote do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
-
+      link("hello", to: URI.parse("https://elixir-lang.org"))
       # Import LiveView and .heex helpers (live_render, live_patch, <.form>, etc)
       import Phoenix.LiveView.Helpers
 
